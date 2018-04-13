@@ -1,6 +1,15 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<<<<<<< HEAD
 <qgis version="2.18.18" simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
   <edittypes/>
+=======
+<qgis version="2.18.16" simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+  <edittypes>
+    <edittype widgetv2type="TextEdit" name="id">
+      <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+    </edittype>
+  </edittypes>
+>>>>>>> upstream/master
   <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
     <symbols>
       <symbol alpha="1" clip_to_extent="1" type="line" name="0">
@@ -78,10 +87,13 @@
                       <symbol alpha="1" clip_to_extent="1" type="marker" name="@@@@0@1@0@1@0">
                         <layer pass="0" class="FontMarker" locked="0">
                           <prop k="angle" v="0"/>
+<<<<<<< HEAD
                           <prop k="angle_dd_active" v="1"/>
                           <prop k="angle_dd_expression" v="CASE WHEN azimuth(&#xd;&#xa;        point_n( $geometry,(@geometry_part_num*2)-1),&#xd;&#xa;        point_n( $geometry,(@geometry_part_num*2))&#xd;&#xa;    )> pi()  THEN degrees(azimuth(&#xd;&#xa;        point_n( $geometry,(@geometry_part_num*2)-1),&#xd;&#xa;        point_n( $geometry,(@geometry_part_num*2))&#xd;&#xa;    ))+90&#xd;&#xa;    ELSE&#xd;&#xa;    degrees(azimuth(&#xd;&#xa;        point_n( $geometry,(@geometry_part_num*2)-1),&#xd;&#xa;        point_n( $geometry,(@geometry_part_num*2))&#xd;&#xa;    ))-90&#xd;&#xa;    END"/>
                           <prop k="angle_dd_field" v=""/>
                           <prop k="angle_dd_useexpr" v="1"/>
+=======
+>>>>>>> upstream/master
                           <prop k="char_dd_active" v="1"/>
                           <prop k="char_dd_expression" v="concat( &#xd;&#xa;  round( &#xd;&#xa;&#x9; distance(&#xd;&#xa;&#x9;&#x9;point_n( $geometry,(@geometry_part_num*2)-1),&#xd;&#xa;&#x9;&#x9;point_n( $geometry,(@geometry_part_num*2)))&#xd;&#xa;&#x9; ,2)&#xd;&#xa;&#x9;, 'm' &#xd;&#xa;)"/>
                           <prop k="char_dd_field" v=""/>
@@ -445,8 +457,13 @@
     <selectedonly on=""/>
   </labelattributes>
   <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+<<<<<<< HEAD
     <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="0" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
       <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
+=======
+    <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+      <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+>>>>>>> upstream/master
       <attribute field="" color="#000000" label=""/>
     </DiagramCategory>
     <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
@@ -472,14 +489,23 @@
       </layer>
     </symbol>
   </SingleCategoryDiagramRenderer>
+<<<<<<< HEAD
   <DiagramLayerSettings yPosColumn="0" showColumn="0" linePlacementFlags="2" placement="2" dist="0" xPosColumn="0" priority="0" obstacle="0" zIndex="0" showAll="1"/>
   <annotationform>.</annotationform>
   <aliases/>
+=======
+  <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+  <annotationform></annotationform>
+  <aliases>
+    <alias field="id" index="0" name=""/>
+  </aliases>
+>>>>>>> upstream/master
   <excludeAttributesWMS/>
   <excludeAttributesWFS/>
   <attributeactions default="-1"/>
   <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
     <columns>
+<<<<<<< HEAD
       <column width="-1" hidden="1" type="actions"/>
     </columns>
   </attributetableconfig>
@@ -487,6 +513,16 @@
   <editforminit/>
   <editforminitcodesource>0</editforminitcodesource>
   <editforminitfilepath>.</editforminitfilepath>
+=======
+      <column width="-1" hidden="0" type="field" name="id"/>
+      <column width="-1" hidden="1" type="actions"/>
+    </columns>
+  </attributetableconfig>
+  <editform></editform>
+  <editforminit/>
+  <editforminitcodesource>0</editforminitcodesource>
+  <editforminitfilepath></editforminitfilepath>
+>>>>>>> upstream/master
   <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -511,7 +547,13 @@ def my_form_open(dialog, layer, feature):
     <rowstyles/>
     <fieldstyles/>
   </conditionalstyles>
+<<<<<<< HEAD
   <defaults/>
+=======
+  <defaults>
+    <default field="id" expression=""/>
+  </defaults>
+>>>>>>> upstream/master
   <previewExpression></previewExpression>
   <layerGeometryType>1</layerGeometryType>
 </qgis>
